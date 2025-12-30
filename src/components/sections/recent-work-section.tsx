@@ -12,66 +12,66 @@ interface RecentWorkItem {
 const recentWorkItems: RecentWorkItem[] = [
   {
     id: '1',
-    title: 'Mountain Vista',
-    image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=1000&fit=crop',
-    category: 'Landscape',
-    link: '/work/mountain-vista',
+    title: 'Chocolate Milkshake',
+    image: '/images/Photography/Chocolate_Milkshake.jpg',
+    category: 'Beverages',
+    link: '/work/chocolate-milkshake',
   },
   {
     id: '2',
-    title: 'Forest Path',
-    image: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=1000&fit=crop',
-    category: 'Nature',
-    link: '/work/forest-path',
+    title: 'Coffee Scoop',
+    image: '/images/Photography/Coffee_Scoop.jpg',
+    category: 'Desserts',
+    link: '/work/coffee-scoop',
   },
   {
     id: '3',
-    title: 'Misty Morning',
-    image: 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&h=1000&fit=crop',
-    category: 'Atmospheric',
-    link: '/work/misty-morning',
+    title: 'Cookies & Cream Milkshake',
+    image: '/images/Photography/CookiesCream_Milkshake.jpg',
+    category: 'Beverages',
+    link: '/work/cookies-cream-milkshake',
   },
   {
     id: '4',
-    title: 'Desert Dunes',
-    image: 'https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=800&h=1000&fit=crop',
-    category: 'Landscape',
-    link: '/work/desert-dunes',
+    title: 'Strawberry Scoop',
+    image: '/images/Photography/Strawberry_Scoop.jpg',
+    category: 'Desserts',
+    link: '/work/strawberry-scoop',
   },
   {
     id: '5',
-    title: 'Coastal Sunset',
-    image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=1000&fit=crop',
-    category: 'Seascape',
-    link: '/work/coastal-sunset',
+    title: 'Kiwi Milkshake',
+    image: '/images/Photography/Kiwi_Milkshake.jpg',
+    category: 'Beverages',
+    link: '/work/kiwi-milkshake',
   },
   {
     id: '6',
-    title: 'Winter Landscape',
-    image: 'https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?w=800&h=1000&fit=crop',
-    category: 'Winter',
-    link: '/work/winter-landscape',
+    title: 'Red Velvet',
+    image: '/images/Photography/Redvelvet.jpg',
+    category: 'Desserts',
+    link: '/work/red-velvet',
   },
   {
     id: '7',
-    title: 'Alpine Lake',
-    image: 'https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=800&h=1000&fit=crop',
-    category: 'Landscape',
-    link: '/work/alpine-lake',
+    title: 'Pineapple Milkshake',
+    image: '/images/Photography/Pineapple_Milkshake.jpg',
+    category: 'Beverages',
+    link: '/work/pineapple-milkshake',
   },
   {
     id: '8',
-    title: 'Storm Clouds',
-    image: 'https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=800&h=1000&fit=crop',
-    category: 'Atmospheric',
-    link: '/work/storm-clouds',
+    title: 'Masala French Fries',
+    image: '/images/Photography/Masala_FrenchFires.jpg',
+    category: 'Snacks',
+    link: '/work/masala-fries',
   },
   {
     id: '9',
-    title: 'Golden Hour',
-    image: 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&h=1000&fit=crop',
-    category: 'Nature',
-    link: '/work/golden-hour',
+    title: 'Veggie Lollipops',
+    image: '/images/Photography/VeggieLollipops.jpg',
+    category: 'Snacks',
+    link: '/work/veggie-lollipops',
   },
 ];
 
@@ -87,7 +87,7 @@ export default function RecentWorkSection(): JSX.Element {
             RECENT WORK
           </h2>
           <p className="text-text-secondary text-lg">
-            A selection of my latest atmospheric landscape photography
+            A selection of our latest food photography showcasing delicious moments
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">

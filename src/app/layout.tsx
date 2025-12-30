@@ -4,13 +4,13 @@ import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 
 export const metadata: Metadata = {
-  title: 'Bryan Minear | Michigan Landscape Photographer',
-  description: 'Portfolio of Bryan Minear, Fujifilm Ambassador and atmospheric landscape photographer based in Michigan.',
-  keywords: ['photography', 'landscape', 'portfolio', 'Fujifilm', 'Michigan', 'atmospheric'],
-  authors: [{ name: 'Bryan Minear' }],
+  title: 'MMCanvas | Professional Food Photography Studio',
+  description: 'MMCanvas is a professional food photography studio specializing in capturing delicious moments. Based in Hyderabad, India.',
+  keywords: ['food photography', 'food styling', 'commercial photography', 'beverage photography', 'dessert photography', 'MMCanvas', 'Hyderabad'],
+  authors: [{ name: 'MMCanvas Studio' }],
   openGraph: {
-    title: 'Bryan Minear Photography',
-    description: 'Atmospheric landscape photography from Michigan',
+    title: 'MMCanvas Food Photography Studio',
+    description: 'Professional food photography and creative studio capturing delicious moments',
     images: ['/og-image.jpg'],
     type: 'website',
   },

@@ -5,21 +5,21 @@ import { NavItem, Collection, JournalPost, ContactInfo, SocialLink } from '@/typ
  */
 export const navigationItems: NavItem[] = [
   { label: 'Home', href: '/' },
-  { label: 'Prints', href: '/prints' },
-  { label: 'Journal', href: '/journal' },
+  { label: 'Gallery', href: '/gallery' },
+  { label: 'Menu', href: '/menu' },
   { label: 'Collections', href: '/collections' },
   { label: 'Portfolio', href: '/portfolio' },
-  { label: 'Gear', href: '/gear' },
   { label: 'About', href: '/about' },
+  { label: 'Contact', href: '/contact' },
 ];
 
 /**
  * Hero section content
  */
 export const heroContent = {
-  greeting: "Hello, I'm Bryan Minear",
-  role: 'Fujifilm Ambassador, Creative Director & Graphic Designer',
-  location: 'Michigan, USA',
+  greeting: 'We are MMCanvas',
+  role: 'Professional Food Photography & Creative Studio',
+  location: 'Capturing Delicious Moments',
   buttons: [
     { label: 'View Portfolio', href: '/portfolio', variant: 'primary' as const },
     { label: 'View Collections', href: '/collections', variant: 'secondary' as const },
@@ -31,34 +31,34 @@ export const heroContent = {
  */
 export const collections: Collection[] = [
   {
-    id: 'seasonal',
-    title: 'Seasonal Collection',
-    description: 'Seasonal is an exploration of the midwestern landscape told through 40 unique images photographed over the course of 7 years.',
-    image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&h=1200&fit=crop',
+    id: 'beverages',
+    title: 'Beverages Collection',
+    description: 'A stunning collection of refreshing beverages and milkshakes, capturing the essence of taste and presentation through 8 unique shots.',
+    image: '/images/Photography/Chocolate_Milkshake.jpg',
     stats: {
-      year: '2023',
-      photos: 40,
-      collectors: 32,
-      volume: '12.5',
+      year: '2024',
+      photos: 8,
+      collectors: 25,
+      volume: '15.2',
     },
     links: {
-      viewCollection: '/seasonal',
-      marketplace: 'https://opensea.io/collection/seasonal',
+      viewCollection: '/beverages',
+      marketplace: '',
     },
   },
   {
-    id: 'legacy',
-    title: 'Legacy Art Collection',
-    description: 'The Legacy Art Collection is the home of all minted 1/1 photography from Bryan Minear.',
-    image: 'https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=1600&h=1200&fit=crop',
+    id: 'desserts',
+    title: 'Desserts & Ice Cream',
+    description: 'The premium collection showcasing artisanal ice cream scoops and sweet treats, highlighting texture, color, and mouth-watering appeal.',
+    image: '/images/Photography/Strawberry_Scoop.jpg',
     stats: {
-      photos: 25,
+      photos: 10,
       collectors: 18,
-      volume: '8.3',
+      volume: '12.8',
     },
     links: {
-      viewCollection: '/legacy',
-      marketplace: 'https://superrare.com/bryanminear',
+      viewCollection: '/desserts',
+      marketplace: '',
     },
   },
 ];
@@ -69,27 +69,27 @@ export const collections: Collection[] = [
 export const journalPosts: JournalPost[] = [
   {
     id: '1',
-    title: 'Traveler: A Personal Project About Fatherhood, Legacy, and Breaking Generational Cycles – Shot on the GFX100SII and GF500mmF5.6',
-    excerpt: 'This is a real special one for me to finally write about. Outside of getting to use a brand new camera and lens in the Fujifilm GFX100SII and GF500mmF5.6, I finally got to create the most meaningful project of my career… alongside and with the help of my oldest son.',
-    image: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1280&h=800&fit=crop',
-    link: '/journal/traveler',
-    date: '2024-12-15',
+    title: 'Crafting the Perfect Milkshake Shot: Behind the Scenes',
+    excerpt: 'Discover the techniques and lighting setup we used to capture the creamy texture and vibrant colors of our signature milkshakes. From props to post-processing, every detail matters.',
+    image: '/images/Photography/Coffee_Milkshake.jpg',
+    link: '/journal/milkshake-photography',
+    date: '2024-12-28',
   },
   {
     id: '2',
-    title: '10 Free Lightroom & Adobe Camera RAW Presets',
-    excerpt: 'As I lead up to launching some new preset packs for sale on this site, I wanted to offer some of my favorite presets as',
-    image: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1280&h=800&fit=crop',
-    link: '/journal/free-presets',
-    date: '2024-12-10',
+    title: 'Ice Cream Photography: Tips for Capturing Frozen Perfection',
+    excerpt: 'Working with ice cream presents unique challenges. Learn our secrets for keeping subjects fresh while achieving that perfect melting moment in every shot.',
+    image: '/images/Photography/Chocolate_Scoop.jpg',
+    link: '/journal/ice-cream-tips',
+    date: '2024-12-20',
   },
   {
     id: '3',
-    title: 'Down and dirty in the desert with the Fujifilm X-H2s & XF150-600mm lens',
-    excerpt: "The X-H2s is a videographer's dream camera, and the lens is a MUST-BUY if you like shooting long, let's dive in! This camera has been",
-    image: 'https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=1280&h=800&fit=crop',
-    link: '/journal/xh2s',
-    date: '2024-12-05',
+    title: 'Food Styling Essentials: Creating Visual Appeal',
+    excerpt: 'From color theory to composition, explore the fundamental principles of food styling that make our photographs stand out. Essential knowledge for every food photographer.',
+    image: '/images/Photography/Masala_FrenchFires.jpg',
+    link: '/journal/food-styling',
+    date: '2024-12-15',
   },
 ];
 
@@ -97,20 +97,20 @@ export const journalPosts: JournalPost[] = [
  * Contact information
  */
 export const contactInfo: ContactInfo = {
-  email: 'create@bryanminear.com',
-  location: 'Michigan, US',
+  email: 'hello@mmcanvas.com',
+  location: 'Hyderabad, India',
 };
 
 /**
  * Social links
  */
 export const socialLinks: SocialLink[] = [
-  { platform: 'Instagram', url: 'https://instagram.com/bryanminear', icon: 'instagram' },
-  { platform: 'Twitter', url: 'https://twitter.com/bryanminear', icon: 'twitter' },
-  { platform: 'YouTube', url: 'https://youtube.com/@bryanminear', icon: 'youtube' },
+  { platform: 'Instagram', url: 'https://instagram.com/mmcanvas', icon: 'instagram' },
+  { platform: 'Twitter', url: 'https://twitter.com/mmcanvas', icon: 'twitter' },
+  { platform: 'YouTube', url: 'https://youtube.com/@mmcanvas', icon: 'youtube' },
 ];
 
 /**
  * Copyright text
  */
-export const copyrightText = '© 2024. Copyright Antimatter Media, LLC.';
+export const copyrightText = '© 2024. Copyright MMCanvas Studio. All Rights Reserved.';

@@ -13,7 +13,7 @@ export default function ContactSection(): JSX.Element {
             Contact Me
           </h2>
           <p className="text-lg text-text-secondary mb-12">
-            Got an idea for a project? Let's make it happen!
+            Got an idea for a project? Let&apos;s make it happen!
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-gray-dark rounded-lg p-8">

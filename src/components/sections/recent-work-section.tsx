@@ -100,13 +100,13 @@ export default function RecentWorkSection(): JSX.Element {
             A selection of our latest food photography showcasing delicious moments
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-[200px]">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-[250px] [grid-auto-flow:dense]">
           {recentWorkItems.map((item) => {
             const aspectClasses = {
-              tall: 'md:row-span-2 md:col-span-1',
-              wide: 'md:row-span-1 md:col-span-2',
-              square: 'md:row-span-1 md:col-span-1',
-              portrait: 'md:row-span-2 md:col-span-1',
+              tall: 'row-span-1 col-span-1 md:row-span-2 md:col-span-1',
+              wide: 'row-span-1 col-span-1 md:row-span-1 md:col-span-2',
+              square: 'row-span-1 col-span-1',
+              portrait: 'row-span-1 col-span-1 md:row-span-2 md:col-span-1',
             };
 
             return (

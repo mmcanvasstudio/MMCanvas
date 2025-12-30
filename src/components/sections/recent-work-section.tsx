@@ -7,6 +7,7 @@ interface RecentWorkItem {
   image: string;
   category: string;
   link: string;
+  aspectRatio: 'tall' | 'wide' | 'square' | 'portrait';
 }
 
 const recentWorkItems: RecentWorkItem[] = [
@@ -16,6 +17,7 @@ const recentWorkItems: RecentWorkItem[] = [
     image: '/images/Photography/Chocolate_Milkshake.jpg',
     category: 'Beverages',
     link: '/work/chocolate-milkshake',
+    aspectRatio: 'tall',
   },
   {
     id: '2',
@@ -23,6 +25,7 @@ const recentWorkItems: RecentWorkItem[] = [
     image: '/images/Photography/Coffee_Scoop.jpg',
     category: 'Desserts',
     link: '/work/coffee-scoop',
+    aspectRatio: 'square',
   },
   {
     id: '3',
@@ -30,6 +33,7 @@ const recentWorkItems: RecentWorkItem[] = [
     image: '/images/Photography/CookiesCream_Milkshake.jpg',
     category: 'Beverages',
     link: '/work/cookies-cream-milkshake',
+    aspectRatio: 'portrait',
   },
   {
     id: '4',
@@ -37,6 +41,7 @@ const recentWorkItems: RecentWorkItem[] = [
     image: '/images/Photography/Strawberry_Scoop.jpg',
     category: 'Desserts',
     link: '/work/strawberry-scoop',
+    aspectRatio: 'wide',
   },
   {
     id: '5',
@@ -44,6 +49,7 @@ const recentWorkItems: RecentWorkItem[] = [
     image: '/images/Photography/Kiwi_Milkshake.jpg',
     category: 'Beverages',
     link: '/work/kiwi-milkshake',
+    aspectRatio: 'tall',
   },
   {
     id: '6',
@@ -51,6 +57,7 @@ const recentWorkItems: RecentWorkItem[] = [
     image: '/images/Photography/Redvelvet.jpg',
     category: 'Desserts',
     link: '/work/red-velvet',
+    aspectRatio: 'square',
   },
   {
     id: '7',
@@ -58,6 +65,7 @@ const recentWorkItems: RecentWorkItem[] = [
     image: '/images/Photography/Pineapple_Milkshake.jpg',
     category: 'Beverages',
     link: '/work/pineapple-milkshake',
+    aspectRatio: 'portrait',
   },
   {
     id: '8',
@@ -65,6 +73,7 @@ const recentWorkItems: RecentWorkItem[] = [
     image: '/images/Photography/Masala_FrenchFires.jpg',
     category: 'Snacks',
     link: '/work/masala-fries',
+    aspectRatio: 'wide',
   },
   {
     id: '9',
@@ -72,6 +81,7 @@ const recentWorkItems: RecentWorkItem[] = [
     image: '/images/Photography/VeggieLollipops.jpg',
     category: 'Snacks',
     link: '/work/veggie-lollipops',
+    aspectRatio: 'square',
   },
 ];
 
@@ -90,21 +100,32 @@ export default function RecentWorkSection(): JSX.Element {
             A selection of our latest food photography showcasing delicious moments
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {recentWorkItems.map((item) => (
-            <Link
-              key={item.id}
-              href={item.link}
-              className="group relative aspect-[3/4] overflow-hidden bg-gray-medium cursor-pointer"
-            >
-              <Image
-                src={item.image}
-                alt={item.title}
-                fill
-                className="object-cover transition-all duration-500 group-hover:grayscale group-hover:scale-105"
-              />
-            </Link>
-          ))}
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-[200px]">
+          {recentWorkItems.map((item) => {
+            const aspectClasses = {
+              tall: 'md:row-span-2 md:col-span-1',
+              wide: 'md:row-span-1 md:col-span-2',
+              square: 'md:row-span-1 md:col-span-1',
+              portrait: 'md:row-span-2 md:col-span-1',
+            };
+
+            return (
+              <Link
+                key={item.id}
+                href={item.link}
+                className={`group relative overflow-hidden bg-gray-medium cursor-pointer ${
+                  aspectClasses[item.aspectRatio]
+                }`}
+              >
+                <Image
+                  src={item.image}
+                  alt={item.title}
+                  fill
+                  className="object-cover transition-all duration-500 group-hover:grayscale group-hover:scale-105"
+                />
+              </Link>
+            );
+          })}
         </div>
         <div className="text-center mt-12">
           <Link

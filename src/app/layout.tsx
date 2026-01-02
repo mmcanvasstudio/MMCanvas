@@ -18,9 +18,9 @@ export const viewport = {
 };
 
 export const metadata: Metadata = {
-  title: 'MMCanvas | Professional Food Photography Studio',
-  description: 'MMCanvas is a professional food photography studio specializing in capturing delicious moments. Based in Hyderabad, India.',
-  keywords: ['food photography', 'food styling', 'commercial photography', 'beverage photography', 'dessert photography', 'MMCanvas', 'Hyderabad'],
+  title: 'MMCanvas | Professional Product Photography Studio',
+  description: 'MMCanvas is a professional product photography studio specializing in tech, beauty, and luxury products. Based in Hyderabad, India.',
+  keywords: ['product photography', 'commercial photography', 'tech photography', 'beauty product photography', 'luxury photography', 'MMCanvas', 'Hyderabad'],
   authors: [{ name: 'MMCanvas Studio' }],
   creator: 'MMCanvas Studio',
   publisher: 'MMCanvas Studio',
@@ -29,8 +29,8 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: 'MMCanvas Food Photography Studio',
-    description: 'Professional food photography and creative studio capturing delicious moments',
+    title: 'MMCanvas Product Photography Studio',
+    description: 'Professional product photography and creative studio capturing products with precision and style',
     images: ['/og-image.jpg'],
     type: 'website',
     locale: 'en_US',
@@ -38,8 +38,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'MMCanvas Food Photography Studio',
-    description: 'Professional food photography and creative studio',
+    title: 'MMCanvas Product Photography Studio',
+    description: 'Professional product photography and creative studio',
     images: ['/og-image.jpg'],
   },
   robots: {

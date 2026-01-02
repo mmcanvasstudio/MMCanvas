@@ -12,7 +12,7 @@ export default function Footer(): JSX.Element {
           <div>
             <h3 className="text-2xl font-bold text-foreground mb-4">@MMCANVAS</h3>
             <p className="text-text-secondary text-sm">
-              Professional Food Photography & Creative Studio
+              Professional Product Photography & Creative Studio
             </p>
           </div>
           <div>

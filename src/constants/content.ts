@@ -19,8 +19,8 @@ export const navigationItems: NavItem[] = [
  */
 export const heroContent = {
   greeting: 'We are MMCanvas',
-  role: 'Professional Food Photography & Creative Studio',
-  location: 'Capturing Delicious Moments',
+  role: 'Professional Product Photography & Creative Studio',
+  location: 'Capturing Products with Precision & Style',
   buttons: [
     { label: 'View Portfolio', href: '/portfolio', variant: 'primary' as const },
     { label: 'View Collections', href: '/collections', variant: 'secondary' as const },
@@ -32,34 +32,35 @@ export const heroContent = {
  */
 export const collections: Collection[] = [
   {
-    id: 'beverages',
-    title: 'Beverages Collection',
-    description: 'A stunning collection of refreshing beverages and milkshakes, capturing the essence of taste and presentation through 8 unique shots.',
-    image: '/images/Photography/Chocolate_Milkshake.jpg',
+    id: 'tech-products',
+    title: 'Tech & Electronics Collection',
+    description: 'Professional product photography showcasing cutting-edge technology and electronics with precision lighting and clean compositions.',
+    image: '/images/products/EdgeController_ExpandView.webp',
     stats: {
       year: '2024',
-      photos: 8,
-      collectors: 25,
+      photos: 12,
+      collectors: 89,
       volume: '15.2',
     },
     links: {
-      viewCollection: '/beverages',
-      marketplace: '',
+      viewCollection: '/collections/tech-products',
+      marketplace: 'https://opensea.io/collection/tech-products',
     },
   },
   {
-    id: 'desserts',
-    title: 'Desserts & Ice Cream',
-    description: 'The premium collection showcasing artisanal ice cream scoops and sweet treats, highlighting texture, color, and mouth-watering appeal.',
-    image: '/images/Photography/Strawberry_Scoop.jpg',
+    id: 'beauty-products',
+    title: 'Beauty & Cosmetics Collection',
+    description: 'Elegant beauty product photography featuring cosmetics, nail polish, and skincare with stunning detail and luxurious presentation.',
+    image: '/images/products/NailPolish_1.webp',
     stats: {
-      photos: 10,
-      collectors: 18,
-      volume: '12.8',
+      year: '2024',
+      photos: 15,
+      collectors: 142,
+      volume: '22.7',
     },
     links: {
-      viewCollection: '/desserts',
-      marketplace: '',
+      viewCollection: '/collections/beauty-products',
+      marketplace: 'https://opensea.io/collection/beauty-products',
     },
   },
 ];
@@ -70,26 +71,26 @@ export const collections: Collection[] = [
 export const journalPosts: JournalPost[] = [
   {
     id: '1',
-    title: 'Crafting the Perfect Milkshake Shot: Behind the Scenes',
-    excerpt: 'Discover the techniques and lighting setup we used to capture the creamy texture and vibrant colors of our signature milkshakes. From props to post-processing, every detail matters.',
-    image: '/images/Photography/Coffee_Milkshake.jpg',
-    link: '/journal/milkshake-photography',
+    title: 'Mastering Tech Product Photography: Edge Controllers & Gadgets',
+    excerpt: 'Explore advanced techniques for capturing intricate tech products with precision. From lighting setups to reflective surfaces, we share our expertise in electronics photography.',
+    image: '/images/products/Lexar.webp',
+    link: '/journal/tech-product-photography',
     date: '2024-12-28',
   },
   {
     id: '2',
-    title: 'Ice Cream Photography: Tips for Capturing Frozen Perfection',
-    excerpt: 'Working with ice cream presents unique challenges. Learn our secrets for keeping subjects fresh while achieving that perfect melting moment in every shot.',
-    image: '/images/Photography/Chocolate_Scoop.jpg',
-    link: '/journal/ice-cream-tips',
+    title: 'Luxury Product Photography: Watches and Accessories',
+    excerpt: 'Discover the art of photographing high-end watches and accessories. Learn how we achieve that perfect balance of elegance and detail that makes luxury products shine.',
+    image: '/images/products/FossilEditedOrangeWhite.webp',
+    link: '/journal/luxury-product-photography',
     date: '2024-12-20',
   },
   {
     id: '3',
-    title: 'Food Styling Essentials: Creating Visual Appeal',
-    excerpt: 'From color theory to composition, explore the fundamental principles of food styling that make our photographs stand out. Essential knowledge for every food photographer.',
-    image: '/images/Photography/Masala_FrenchFires.jpg',
-    link: '/journal/food-styling',
+    title: 'Beauty Product Photography: Capturing Cosmetics Perfectly',
+    excerpt: 'From skincare to nail polish, learn the essential techniques for beauty product photography. Color accuracy, texture detail, and flawless presentation made easy.',
+    image: '/images/products/Ponds.webp',
+    link: '/journal/beauty-product-photography',
     date: '2024-12-15',
   },
 ];

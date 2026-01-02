@@ -1,0 +1,9 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://mmcanvas.com/sitemap.xml
+
+# Disallow admin or API routes if any
+Disallow: /api/

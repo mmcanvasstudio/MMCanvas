@@ -177,6 +177,9 @@ export default function RecentWorkSection(): JSX.Element {
                   src={item.image}
                   alt={item.title}
                   fill
+                  priority={parseInt(item.id) <= 3}
+                  loading={parseInt(item.id) <= 3 ? undefined : 'lazy'}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   className="object-cover transition-all duration-500 group-hover:grayscale group-hover:scale-105"
                 />
               </Link>

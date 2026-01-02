@@ -20,6 +20,8 @@ export default function Card({ title, excerpt, image, link }: CardProps): JSX.El
             src={image}
             alt={title}
             fill
+            loading="lazy"
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
             className="object-cover transition-custom group-hover:scale-105"
           />
         </div>

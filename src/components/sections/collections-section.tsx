@@ -28,6 +28,9 @@ export default function CollectionsSection(): JSX.Element {
                   src={collection.image}
                   alt={collection.title}
                   fill
+                  priority={index === 0}
+                  loading={index === 0 ? undefined : 'lazy'}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 600px"
                   className="object-cover"
                 />
               </div>

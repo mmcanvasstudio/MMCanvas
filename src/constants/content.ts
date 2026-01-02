@@ -5,6 +5,7 @@ import { NavItem, Collection, JournalPost, ContactInfo, SocialLink } from '@/typ
  */
 export const navigationItems: NavItem[] = [
   { label: 'Home', href: '/' },
+  { label: 'Shop', href: '/shop' },
   { label: 'Gallery', href: '/gallery' },
   { label: 'Menu', href: '/menu' },
   { label: 'Collections', href: '/collections' },

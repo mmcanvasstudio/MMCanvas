@@ -12,7 +12,7 @@ const inter = Inter({
 });
 
 export const viewport = {
-  themeColor: '#2081E2',
+  themeColor: '#FF6B35',  // Vibrant Coral-Orange to match new accent
   width: 'device-width',
   initialScale: 1,
   maximumScale: 5,

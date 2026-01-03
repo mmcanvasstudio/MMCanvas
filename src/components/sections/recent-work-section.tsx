@@ -1,103 +1,17 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import Image from 'next/image';
 import Lightbox from '@/components/ui/lightbox';
+import galleryData from '@/data/gallery.json';
 
 interface RecentWorkItem {
   id: string;
   title: string;
   image: string;
   category: string;
-  link: string;
+  description: string;
 }
-
-const recentWorkItems: RecentWorkItem[] = [
-  {
-    id: '1',
-    title: 'Edge Gaming Controller',
-    image: '/images/products/EdgeController_ExpandView.webp',
-    category: 'Tech & Electronics',
-    link: '/work/edge-controller',
-  },
-  {
-    id: '2',
-    title: 'Lexar Storage Device',
-    image: '/images/products/Lexar.webp',
-    category: 'Tech & Electronics',
-    link: '/work/lexar-storage',
-  },
-  {
-    id: '3',
-    title: 'Premium Nail Polish - Rose',
-    image: '/images/products/NailPolish_1.webp',
-    category: 'Beauty & Cosmetics',
-    link: '/work/nail-polish-1',
-  },
-  {
-    id: '4',
-    title: 'Ponds Skincare Cream',
-    image: '/images/products/Ponds.webp',
-    category: 'Beauty & Cosmetics',
-    link: '/work/ponds-skincare',
-  },
-  {
-    id: '5',
-    title: 'Vibrant Nail Polish Collection',
-    image: '/images/products/NailPolish_2.webp',
-    category: 'Beauty & Cosmetics',
-    link: '/work/nail-polish-2',
-  },
-  {
-    id: '6',
-    title: 'Gaming Controller - Detail Shot',
-    image: '/images/products/EdgeController_ExpandView.webp',
-    category: 'Tech & Electronics',
-    link: '/work/edge-controller-detail',
-  },
-  {
-    id: '7',
-    title: 'Lexar Tech Accessories',
-    image: '/images/products/Lexar.webp',
-    category: 'Tech & Electronics',
-    link: '/work/lexar-accessories',
-  },
-  {
-    id: '8',
-    title: 'Beauty Essentials - Skincare',
-    image: '/images/products/Ponds.webp',
-    category: 'Beauty & Cosmetics',
-    link: '/work/beauty-essentials',
-  },
-  {
-    id: '9',
-    title: 'Nail Polish Studio Shot',
-    image: '/images/products/NailPolish_1.webp',
-    category: 'Beauty & Cosmetics',
-    link: '/work/nail-polish-studio',
-  },
-  {
-    id: '10',
-    title: 'High-Performance Storage',
-    image: '/images/products/Lexar.webp',
-    category: 'Tech & Electronics',
-    link: '/work/storage-solutions',
-  },
-  {
-    id: '11',
-    title: 'Nail Polish - Color Variety',
-    image: '/images/products/NailPolish_2.webp',
-    category: 'Beauty & Cosmetics',
-    link: '/work/nail-polish-variety',
-  },
-  {
-    id: '12',
-    title: 'Tech Gaming Gear',
-    image: '/images/products/EdgeController_ExpandView.webp',
-    category: 'Tech & Electronics',
-    link: '/work/gaming-gear',
-  },
-];
 
 /**
  * Recent Work section displaying portfolio gallery with lightbox and filters
@@ -107,11 +21,22 @@ export default function RecentWorkSection(): JSX.Element {
   const [lightboxOpen, setLightboxOpen] = useState<boolean>(false);
   const [selectedImageIndex, setSelectedImageIndex] = useState<number>(0);
 
-  const categories = ['All', 'Tech & Electronics', 'Beauty & Cosmetics'];
+  // Import gallery items from JSON
+  const recentWorkItems: RecentWorkItem[] = galleryData.galleryItems;
 
-  const filteredItems = selectedCategory === 'All'
-    ? recentWorkItems
-    : recentWorkItems.filter(item => item.category === selectedCategory);
+  // Memoize categories to avoid recalculation on every render
+  const categories = useMemo(() => {
+    const uniqueCategories = Array.from(new Set(recentWorkItems.map(item => item.category)));
+    return ['All', ...uniqueCategories];
+  }, [recentWorkItems]);
+
+  // Memoize filtered items for performance
+  const filteredItems = useMemo(
+    () => selectedCategory === 'All'
+      ? recentWorkItems
+      : recentWorkItems.filter(item => item.category === selectedCategory),
+    [selectedCategory, recentWorkItems]
+  );
 
   const handleImageClick = (index: number): void => {
     setSelectedImageIndex(index);
@@ -163,7 +88,7 @@ export default function RecentWorkSection(): JSX.Element {
             >
               <Image
                 src={item.image}
-                alt={item.title}
+                alt={item.description || item.title}
                 fill
                 priority={index < 3}
                 loading={index < 3 ? undefined : 'lazy'}

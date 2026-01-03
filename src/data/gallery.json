@@ -1,0 +1,88 @@
+{
+  "galleryItems": [
+    {
+      "id": "1",
+      "title": "Edge Gaming Controller",
+      "image": "/images/products/EdgeController_ExpandView.webp",
+      "category": "Tech & Electronics",
+      "description": "Professional product shot of gaming controller with dramatic lighting"
+    },
+    {
+      "id": "2",
+      "title": "Lexar Storage Device",
+      "image": "/images/products/Lexar.webp",
+      "category": "Tech & Electronics",
+      "description": "High-performance storage device photography with clean composition"
+    },
+    {
+      "id": "3",
+      "title": "Premium Nail Polish - Rose",
+      "image": "/images/products/NailPolish_1.webp",
+      "category": "Beauty & Cosmetics",
+      "description": "Elegant beauty product photography with perfect color accuracy"
+    },
+    {
+      "id": "4",
+      "title": "Ponds Skincare Cream",
+      "image": "/images/products/Ponds.webp",
+      "category": "Beauty & Cosmetics",
+      "description": "Luxurious skincare product with soft, professional lighting"
+    },
+    {
+      "id": "5",
+      "title": "Vibrant Nail Polish Collection",
+      "image": "/images/products/NailPolish_2.webp",
+      "category": "Beauty & Cosmetics",
+      "description": "Colorful nail polish arrangement showcasing variety"
+    },
+    {
+      "id": "6",
+      "title": "Gaming Controller - Detail Shot",
+      "image": "/images/products/EdgeController_ExpandView.webp",
+      "category": "Tech & Electronics",
+      "description": "Close-up detail of gaming peripherals with emphasis on texture"
+    },
+    {
+      "id": "7",
+      "title": "Lexar Tech Accessories",
+      "image": "/images/products/Lexar.webp",
+      "category": "Tech & Electronics",
+      "description": "Modern tech accessories with minimalist styling"
+    },
+    {
+      "id": "8",
+      "title": "Beauty Essentials - Skincare",
+      "image": "/images/products/Ponds.webp",
+      "category": "Beauty & Cosmetics",
+      "description": "Elegant skincare product presentation with premium feel"
+    },
+    {
+      "id": "9",
+      "title": "Nail Polish Studio Shot",
+      "image": "/images/products/NailPolish_1.webp",
+      "category": "Beauty & Cosmetics",
+      "description": "Professional studio photography of beauty products"
+    },
+    {
+      "id": "10",
+      "title": "High-Performance Storage",
+      "image": "/images/products/Lexar.webp",
+      "category": "Tech & Electronics",
+      "description": "Tech product photography with dramatic shadows and highlights"
+    },
+    {
+      "id": "11",
+      "title": "Nail Polish - Color Variety",
+      "image": "/images/products/NailPolish_2.webp",
+      "category": "Beauty & Cosmetics",
+      "description": "Vibrant color palette showcasing product range"
+    },
+    {
+      "id": "12",
+      "title": "Tech Gaming Gear",
+      "image": "/images/products/EdgeController_ExpandView.webp",
+      "category": "Tech & Electronics",
+      "description": "High-end gaming equipment with professional composition"
+    }
+  ]
+}

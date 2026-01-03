@@ -10,16 +10,25 @@ export default function ScrollToTop(): JSX.Element {
   const [scrollProgress, setScrollProgress] = useState<number>(0);
 
   useEffect(() => {
+    let ticking = false;
+    
     const toggleVisibility = (): void => {
-      const scrolled = window.scrollY;
-      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-      const progress = (scrolled / docHeight) * 100;
-      
-      setScrollProgress(progress);
-      setIsVisible(scrolled > 300);
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          const scrolled = window.scrollY;
+          const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+          const progress = (scrolled / docHeight) * 100;
+          
+          setScrollProgress(progress);
+          setIsVisible(scrolled > 300);
+          
+          ticking = false;
+        });
+        ticking = true;
+      }
     };
 
-    window.addEventListener('scroll', toggleVisibility);
+    window.addEventListener('scroll', toggleVisibility, { passive: true });
     toggleVisibility();
 
     return () => window.removeEventListener('scroll', toggleVisibility);

@@ -13,18 +13,27 @@ export default function HeroSection(): JSX.Element {
   const [showScrollIndicator, setShowScrollIndicator] = useState<boolean>(true);
 
   useEffect(() => {
+    let ticking = false;
+    
     const handleScroll = (): void => {
-      const currentScrollY = window.scrollY;
-      setScrollY(currentScrollY);
-      
-      // Hide scroll indicator only when scrolled past the hero section
-      // Hero is min-h-screen, so hide when scrolled past viewport height
-      const heroHeight = window.innerHeight - 200; // Hide when approaching end of hero
-      setShowScrollIndicator(currentScrollY < heroHeight);
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          const currentScrollY = window.scrollY;
+          setScrollY(currentScrollY);
+          
+          // Hide scroll indicator only when scrolled past the hero section
+          // Hero is min-h-screen, so hide when scrolled past viewport height
+          const heroHeight = window.innerHeight - 200; // Hide when approaching end of hero
+          setShowScrollIndicator(currentScrollY < heroHeight);
+          
+          ticking = false;
+        });
+        ticking = true;
+      }
     };
     
-    window.addEventListener('scroll', handleScroll);
-    window.addEventListener('resize', handleScroll); // Update on resize
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    window.addEventListener('resize', handleScroll);
     handleScroll(); // Initialize on mount
     
     return () => {

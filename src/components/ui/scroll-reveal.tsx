@@ -25,6 +25,10 @@ export default function ScrollReveal({
         if (entry.isIntersecting) {
           setTimeout(() => {
             setIsVisible(true);
+            // Disconnect observer after animation triggers to prevent memory leaks
+            if (ref.current) {
+              observer.unobserve(ref.current);
+            }
           }, delay);
         }
       },
@@ -43,6 +47,7 @@ export default function ScrollReveal({
       if (currentRef) {
         observer.unobserve(currentRef);
       }
+      observer.disconnect();
     };
   }, [delay]);
 

@@ -12,7 +12,10 @@ const config: Config = {
         background: '#0a0a0a',
         foreground: '#ffffff',
         'text-secondary': '#a0a0a0',
-        accent: '#2081E2',
+        accent: '#FF6B35',        // Vibrant Coral-Orange (Primary)
+        'accent-secondary': '#F7931E',  // Golden Orange (Secondary)
+        'accent-light': '#FF8F5C',      // Lighter coral for hover
+        'accent-gold': '#FFD23F',       // Golden highlight
         'gray-dark': '#1a1a1a',
         'gray-medium': '#2a2a2a',
         'gray-light': '#3a3a3a',

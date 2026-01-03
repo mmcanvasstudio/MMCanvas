@@ -10,10 +10,10 @@ export default function ContactSection(): JSX.Element {
       <div className="container-custom">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-            Contact Me
+            Get In Touch
           </h2>
           <p className="text-lg text-text-secondary mb-12">
-            Got an idea for a project? Let&apos;s make it happen!
+            Ready to elevate your product visuals? Let&apos;s create something beautiful together.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-gray-dark rounded-lg p-8">

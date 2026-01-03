@@ -10,9 +10,9 @@ export default function Footer(): JSX.Element {
       <div className="container-custom">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
-            <h3 className="text-2xl font-bold text-foreground mb-4">@BRYANMINEAR</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4">@MMCANVASSTUDIO</h3>
             <p className="text-text-secondary text-sm">
-              Official Fujifilm X-Photographer & Kolari Vision Ambassador
+              Food & Product Photography Studio
             </p>
           </div>
           <div>

@@ -6,7 +6,6 @@ import { NavItem, Collection, JournalPost, ContactInfo, SocialLink } from '@/typ
 export const navigationItems: NavItem[] = [
   { label: 'Home', href: '/' },
   { label: 'Food', href: '/food' },
-  { label: 'Product', href: '/product' },
   { label: 'Personal', href: '/personal' },
   { label: 'Contact Us', href: '/contact' },
 ];
@@ -38,21 +37,6 @@ export const collections: Collection[] = [
     links: {
       viewCollection: '/food',
       marketplace: 'https://mmcanvas.com/collections/food',
-    },
-  },
-  {
-    id: 'product',
-    title: 'Product Photography',
-    description: 'Professional commercial product photography showcasing your brand with precision lighting, clean compositions, and attention to detail. Perfect for e-commerce and advertising.',
-    image: '/images/products/EdgeController_ExpandView.webp',
-    stats: {
-      photos: 80,
-      collectors: 45,
-      volume: '18.5',
-    },
-    links: {
-      viewCollection: '/product',
-      marketplace: 'https://mmcanvas.com/collections/product',
     },
   },
   {

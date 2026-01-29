@@ -1,88 +1,186 @@
 {
   "galleryItems": [
     {
+      "id": "food-1",
+      "title": "Gourmet Dish Presentation",
+      "image": "/images/products/Coke_1.jpeg",
+      "category": "Food",
+      "description": "Restaurant-quality food photography with perfect composition and lighting"
+    },
+    {
+      "id": "food-2",
+      "title": "Fresh Ingredients",
+      "image": "/images/products/K_Side.jpg",
+      "category": "Food",
+      "description": "Vibrant fresh produce and ingredients showcasing natural colors"
+    },
+    {
+      "id": "food-3",
+      "title": "Culinary Masterpiece",
+      "image": "/images/products/CoffeeDay.jpeg",
+      "category": "Food",
+      "description": "Fine dining presentation with elegant plating and garnishes"
+    },
+    {
+      "id": "food-4",
+      "title": "Dessert Delight",
+      "image": "/images/products/Chair_Side.png",
+      "category": "Food",
+      "description": "Sweet treats and desserts captured in mouth-watering detail"
+    },
+    {
+      "id": "food-5",
+      "title": "Breakfast Spread",
+      "image": "/images/products/Redvelvet.jpg",
+      "category": "Food",
+      "description": "Morning favorites with natural light and appetizing styling"
+    },
+    {
+      "id": "food-6",
+      "title": "Beverage Photography",
+      "image": "/images/products/Coke_3.jpeg",
+      "category": "Food",
+      "description": "Refreshing drinks and cocktails with professional styling"
+    },
+    {
       "id": "1",
       "title": "Edge Gaming Controller",
-      "image": "/images/products/EdgeController_ExpandView.webp",
-      "category": "Tech & Electronics",
+      "image": "/images/products/Biscotti_Scoop.jpg",
+      "category": "Product",
       "description": "Professional product shot of gaming controller with dramatic lighting"
     },
     {
       "id": "2",
       "title": "Lexar Storage Device",
-      "image": "/images/products/Lexar.webp",
-      "category": "Tech & Electronics",
+      "image": "/images/products/Coke_2.jpeg",
+      "category": "Product",
       "description": "High-performance storage device photography with clean composition"
     },
     {
       "id": "3",
       "title": "Premium Nail Polish - Rose",
-      "image": "/images/products/NailPolish_1.webp",
-      "category": "Beauty & Cosmetics",
+      "image": "/images/products/Chair_Lean_Side.png",
+      "category": "Product",
       "description": "Elegant beauty product photography with perfect color accuracy"
     },
     {
       "id": "4",
       "title": "Ponds Skincare Cream",
       "image": "/images/products/Ponds.webp",
-      "category": "Beauty & Cosmetics",
+      "category": "Product",
       "description": "Luxurious skincare product with soft, professional lighting"
     },
     {
       "id": "5",
       "title": "Vibrant Nail Polish Collection",
       "image": "/images/products/NailPolish_2.webp",
-      "category": "Beauty & Cosmetics",
+      "category": "Product",
       "description": "Colorful nail polish arrangement showcasing variety"
     },
     {
       "id": "6",
       "title": "Gaming Controller - Detail Shot",
       "image": "/images/products/EdgeController_ExpandView.webp",
-      "category": "Tech & Electronics",
+      "category": "Product",
       "description": "Close-up detail of gaming peripherals with emphasis on texture"
     },
     {
       "id": "7",
       "title": "Lexar Tech Accessories",
       "image": "/images/products/Lexar.webp",
-      "category": "Tech & Electronics",
+      "category": "Product",
       "description": "Modern tech accessories with minimalist styling"
     },
     {
       "id": "8",
       "title": "Beauty Essentials - Skincare",
       "image": "/images/products/Ponds.webp",
-      "category": "Beauty & Cosmetics",
+      "category": "Product",
       "description": "Elegant skincare product presentation with premium feel"
     },
     {
       "id": "9",
       "title": "Nail Polish Studio Shot",
       "image": "/images/products/NailPolish_1.webp",
-      "category": "Beauty & Cosmetics",
+      "category": "Product",
       "description": "Professional studio photography of beauty products"
     },
     {
       "id": "10",
       "title": "High-Performance Storage",
       "image": "/images/products/Lexar.webp",
-      "category": "Tech & Electronics",
+      "category": "Product",
       "description": "Tech product photography with dramatic shadows and highlights"
     },
     {
       "id": "11",
       "title": "Nail Polish - Color Variety",
       "image": "/images/products/NailPolish_2.webp",
-      "category": "Beauty & Cosmetics",
+      "category": "Product",
       "description": "Vibrant color palette showcasing product range"
     },
     {
       "id": "12",
       "title": "Tech Gaming Gear",
       "image": "/images/products/EdgeController_ExpandView.webp",
-      "category": "Tech & Electronics",
+      "category": "Product",
       "description": "High-end gaming equipment with professional composition"
+    },
+    {
+      "id": "personal-1",
+      "title": "Portrait Session",
+      "image": "/images/products/EdgeController_ExpandView.webp",
+      "category": "Personal",
+      "description": "Professional portrait photography with natural lighting and authentic expressions"
+    },
+    {
+      "id": "personal-2",
+      "title": "Lifestyle Photography",
+      "image": "/images/products/Lexar.webp",
+      "category": "Personal",
+      "description": "Candid lifestyle moments captured with artistic composition"
+    },
+    {
+      "id": "personal-3",
+      "title": "Creative Portraits",
+      "image": "/images/products/NailPolish_1.webp",
+      "category": "Personal",
+      "description": "Artistic portrait photography with creative styling and lighting"
+    },
+    {
+      "id": "personal-4",
+      "title": "Environmental Portraits",
+      "image": "/images/products/Ponds.webp",
+      "category": "Personal",
+      "description": "Portraits in natural settings showcasing personality and style"
+    },
+    {
+      "id": "personal-5",
+      "title": "Studio Portraits",
+      "image": "/images/products/NailPolish_2.webp",
+      "category": "Personal",
+      "description": "Professional studio photography with controlled lighting and backdrops"
+    },
+    {
+      "id": "personal-6",
+      "title": "Headshot Photography",
+      "image": "/images/products/Coke_3.jpeg",
+      "category": "Personal",
+      "description": "Professional headshots for corporate and creative professionals"
+    },
+    {
+      "id": "personal-7",
+      "title": "Lifestyle Moments",
+      "image": "/images/products/Lexar.webp",
+      "category": "Personal",
+      "description": "Authentic lifestyle photography capturing everyday moments"
+    },
+    {
+      "id": "personal-8",
+      "title": "Creative Concepts",
+      "image": "/images/products/Ponds.webp",
+      "category": "Personal",
+      "description": "Conceptual portrait photography with artistic vision and storytelling"
     }
   ]
 }

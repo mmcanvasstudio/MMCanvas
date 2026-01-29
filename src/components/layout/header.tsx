@@ -11,10 +11,16 @@ export default function Header(): JSX.Element {
   const [scrolled, setScrolled] = useState<boolean>(false);
 
   useEffect(() => {
+    // Only run on client side
+    if (typeof window === 'undefined') return;
+    
     const handleScroll = (): void => {
       setScrolled(window.scrollY > 50);
     };
-    window.addEventListener('scroll', handleScroll);
+    
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll(); // Initialize on mount
+    
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 

@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
-import Button from '@/components/ui/button';
 import { heroContent } from '@/constants/content';
 
 /**
@@ -13,6 +12,9 @@ export default function HeroSection(): JSX.Element {
   const [showScrollIndicator, setShowScrollIndicator] = useState<boolean>(true);
 
   useEffect(() => {
+    // Only run on client side
+    if (typeof window === 'undefined') return;
+    
     let ticking = false;
     
     const handleScroll = (): void => {
@@ -34,7 +36,9 @@ export default function HeroSection(): JSX.Element {
     
     window.addEventListener('scroll', handleScroll, { passive: true });
     window.addEventListener('resize', handleScroll);
-    handleScroll(); // Initialize on mount
+    
+    // Initialize on mount (client-side only)
+    handleScroll();
     
     return () => {
       window.removeEventListener('scroll', handleScroll);
@@ -90,22 +94,9 @@ export default function HeroSection(): JSX.Element {
           </p>
 
           {/* Description */}
-          <p className="text-base md:text-lg text-text-secondary mb-12 max-w-2xl mx-auto animate-fade-in">
+          <p className="text-base md:text-lg text-text-secondary mb-16 max-w-2xl mx-auto animate-fade-in">
             {heroContent.location}
           </p>
-
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16 animate-fade-in">
-            {heroContent.buttons.map((button) => (
-              <Button
-                key={button.label}
-                href={button.href}
-                variant={button.variant}
-              >
-                {button.label}
-              </Button>
-            ))}
-          </div>
 
           {/* Stats Preview */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl mx-auto animate-fade-in">

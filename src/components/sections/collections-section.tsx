@@ -1,11 +1,10 @@
 import Image from 'next/image';
-import Button from '@/components/ui/button';
-import CustomLink from '@/components/ui/link';
+import Link from 'next/link';
 import ScrollReveal from '@/components/ui/scroll-reveal';
 import { collections } from '@/constants/content';
 
 /**
- * Collections section showcasing Seasonal and Legacy collections
+ * Collections section showcasing Food, Product, and Personal photography
  */
 export default function CollectionsSection(): JSX.Element {
   return (
@@ -29,9 +28,12 @@ export default function CollectionsSection(): JSX.Element {
                   index % 2 === 1 ? 'lg:grid-flow-dense' : ''
                 }`}
               >
-                <div className={`group relative aspect-[4/3] rounded-lg overflow-hidden bg-gray-medium shadow-2xl ${
-                  index % 2 === 1 ? 'lg:col-start-2' : ''
-                }`}>
+                <Link
+                  href={collection.links.viewCollection}
+                  className={`group relative aspect-[4/3] rounded-lg overflow-hidden bg-gray-medium shadow-2xl cursor-pointer block ${
+                    index % 2 === 1 ? 'lg:col-start-2' : ''
+                  }`}
+                >
                   <Image
                     src={collection.image}
                     alt={collection.title}
@@ -39,11 +41,13 @@ export default function CollectionsSection(): JSX.Element {
                     className="object-cover transition-all duration-700 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-custom" />
-                </div>
+                </Link>
                 <div className={index % 2 === 1 ? 'lg:col-start-1 lg:row-start-1' : ''}>
-                  <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-                    {collection.title}
-                  </h3>
+                  <Link href={collection.links.viewCollection}>
+                    <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4 hover:text-accent transition-custom cursor-pointer">
+                      {collection.title}
+                    </h3>
+                  </Link>
                   <p className="text-text-secondary text-base md:text-lg mb-8">
                     {collection.description}
                   </p>
@@ -66,20 +70,6 @@ export default function CollectionsSection(): JSX.Element {
                       <p className="text-xs uppercase text-text-secondary mb-1">Ξ Volume</p>
                       <p className="text-2xl font-bold text-foreground">{collection.stats.volume}</p>
                     </div>
-                  </div>
-                  <div className="flex flex-col sm:flex-row gap-4">
-                    <Button href={collection.links.viewCollection} variant="primary">
-                      View Collection
-                    </Button>
-                    {collection.links.marketplace && (
-                      <CustomLink
-                        href={collection.links.marketplace}
-                        external
-                        className="inline-flex items-center justify-center px-8 py-3 rounded-md font-medium border-2 border-accent text-accent hover:bg-accent hover:text-background transition-custom"
-                      >
-                        View on Marketplace
-                      </CustomLink>
-                    )}
                   </div>
                 </div>
               </div>

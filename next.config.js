@@ -2,6 +2,11 @@
 const nextConfig = {
   reactStrictMode: true,
   
+  // Font optimization
+  experimental: {
+    optimizeFonts: true,
+  },
+  
   // Image optimization
   images: {
     remotePatterns: [

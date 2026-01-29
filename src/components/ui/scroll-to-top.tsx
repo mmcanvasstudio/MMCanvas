@@ -10,6 +10,9 @@ export default function ScrollToTop(): JSX.Element {
   const [scrollProgress, setScrollProgress] = useState<number>(0);
 
   useEffect(() => {
+    // Only run on client side
+    if (typeof window === 'undefined') return;
+    
     let ticking = false;
     
     const toggleVisibility = (): void => {
@@ -29,16 +32,20 @@ export default function ScrollToTop(): JSX.Element {
     };
 
     window.addEventListener('scroll', toggleVisibility, { passive: true });
+    
+    // Initialize on mount (client-side only)
     toggleVisibility();
 
     return () => window.removeEventListener('scroll', toggleVisibility);
   }, []);
 
   const scrollToTop = (): void => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
+    if (typeof window !== 'undefined') {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
+    }
   };
 
   return (

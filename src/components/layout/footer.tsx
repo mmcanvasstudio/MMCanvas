@@ -18,6 +18,11 @@ export default function Footer(): JSX.Element {
           <div>
             <h4 className="text-sm font-semibold text-foreground mb-3 uppercase">Contact</h4>
             <p className="text-text-secondary text-sm mb-2">
+              <CustomLink href={`tel:${contactInfo.phone.replace(/\s/g, '')}`} external>
+                {contactInfo.phone}
+              </CustomLink>
+            </p>
+            <p className="text-text-secondary text-sm mb-2">
               <CustomLink href={`mailto:${contactInfo.email}`} external>
                 {contactInfo.email}
               </CustomLink>

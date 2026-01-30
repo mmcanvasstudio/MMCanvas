@@ -9,18 +9,18 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: '#0a0a0a',
-        foreground: '#ffffff',
-        'text-secondary': '#a0a0a0',
-        accent: '#FF6B35',        // Vibrant Coral-Orange (Primary)
-        'accent-secondary': '#F7931E',  // Golden Orange (Secondary)
-        'accent-light': '#FF8F5C',      // Lighter coral for hover
-        'accent-gold': '#FFD23F',       // Golden highlight
-        'gray-dark': '#1a1a1a',
-        'gray-medium': '#2a2a2a',
-        'gray-light': '#3a3a3a',
-        border: '#2a2a2a',
-        hover: '#1a1a1a',
+        background: 'hsl(var(--background))',
+        foreground: 'hsl(var(--foreground))',
+        'text-secondary': 'hsl(var(--text-secondary))',
+        accent: 'hsl(var(--accent))',
+        'accent-secondary': 'hsl(var(--accent-secondary))',
+        'accent-light': 'hsl(var(--accent-light))',
+        'accent-dark': 'hsl(var(--accent-dark))',
+        'gray-dark': 'hsl(var(--gray-dark))',
+        'gray-medium': 'hsl(var(--gray-medium))',
+        'gray-light': 'hsl(var(--gray-light))',
+        border: 'hsl(var(--border))',
+        hover: 'hsl(var(--hover))',
       },
       fontFamily: {
         sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],

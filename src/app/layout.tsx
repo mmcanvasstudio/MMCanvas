@@ -14,7 +14,7 @@ const inter = Inter({
 });
 
 export const viewport = {
-  themeColor: '#FF6B35',  // Vibrant Coral-Orange to match new accent
+  themeColor: '#C9A55A',  // Luxurious warm gold to match premium accent
   width: 'device-width',
   initialScale: 1,
   maximumScale: 5,

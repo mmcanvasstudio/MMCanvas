@@ -67,7 +67,7 @@ export default function HeroSection(): JSX.Element {
       {/* Animated Grid Pattern */}
       <div className="absolute inset-0 z-0 opacity-10">
         <div className="absolute inset-0" style={{
-          backgroundImage: 'radial-gradient(circle, #2081E2 1px, transparent 1px)',
+          backgroundImage: 'radial-gradient(circle, #C9A55A 1px, transparent 1px)',
           backgroundSize: '50px 50px',
         }} />
       </div>

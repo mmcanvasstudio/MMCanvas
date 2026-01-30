@@ -115,7 +115,8 @@ export const journalPosts: JournalPost[] = [
  * Contact information
  */
 export const contactInfo: ContactInfo = {
-  email: 'info@mmcanvas.com',
+  email: 'admin@mmcanvas.com',
+  phone: '+91 78424 99771',
   location: 'Hyderabad, India',
 };
 
@@ -123,7 +124,7 @@ export const contactInfo: ContactInfo = {
  * Social links
  */
 export const socialLinks: SocialLink[] = [
-  { platform: 'Instagram', url: 'https://instagram.com/mmcanvasstudio', icon: 'instagram' },
+  { platform: 'Instagram', url: 'https://www.instagram.com/mmcanvas_photography', icon: 'instagram' },
   { platform: 'Twitter', url: 'https://twitter.com/mmcanvasstudio', icon: 'twitter' },
   { platform: 'LinkedIn', url: 'https://linkedin.com/company/mmcanvas', icon: 'linkedin' },
 ];

@@ -2,9 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  /* Light theme (default) */
+  --background: 60 33% 98%;        /* #FAFAF8 */
+  --foreground: 60 6% 10%;         /* #1A1A18 */
+  --text-secondary: 60 8% 40%;     /* #6B6B60 */
+  --accent: 39 48% 57%;            /* #C9A55A */
+  --accent-secondary: 39 53% 63%;  /* #D4AF6F */
+  --accent-light: 39 69% 73%;      /* #E6C589 */
+  --accent-dark: 42 45% 43%;       /* #9D7F3A */
+  --gray-dark: 60 17% 91%;         /* #E8E8E5 */
+  --gray-medium: 60 11% 83%;       /* #D5D5D0 */
+  --gray-light: 60 8% 76%;         /* #C2C2BD */
+  --border: 60 11% 83%;            /* #D5D5D0 */
+  --hover: 60 17% 91%;             /* #E8E8E5 */
+}
+
 @layer base {
   * {
     @apply border-border;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
   }
   
   body {
